@@ -22,7 +22,7 @@ void quickSort(meeting *arr, int L, int R) { // 정렬 할 배열, Left , Right
 		while ((arr[left].e < pivot.e) || ((arr[left].e == pivot.e) && (arr[left].s < pivot.s))) // 다중 조건 퀵정렬
 			left++;
 
-		while ((pivot.e < arr[right].e) || ((pivot.e == arr[right].e) && (pivot.s < arr[right].s))) // 다중  퀵정렬
+		while ((pivot.e < arr[right].e) || ((pivot.e == arr[right].e) && (pivot.s < arr[right].s))) // 다중 조건 퀵정렬
 			right--;
 
 		if (left <= right) {
